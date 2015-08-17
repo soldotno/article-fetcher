@@ -11,7 +11,7 @@ Fetches clean full text articles.
 
 ## Install
 
-    npm install git+ssh://git@github.com/soldotno/article-fetcher#v0.2.3
+    npm install article-fetcher
     npm build
 
 ## Usage

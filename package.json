@@ -1,6 +1,6 @@
 {
-  "name": "harvester-article-fetcher",
-  "version": "0.2.3",
+  "name": "article-fetcher",
+  "version": "0.0.1",
   "main": "./dist/index",
   "description": "Fetches clean full text articles.",
   "dependencies": {
@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/soldotno/harvester-article-fetcher.git"
+    "url": "git://github.com/soldotno/article-fetcher.git"
   },
   "scripts": {
     "postinstall": "npm run build",
