@@ -83,4 +83,10 @@ af.getArticle(url, options, (err, res) => {
 
 Output:
 
-   Det var litt av et syn som møtte Jason Griffiths da han tittet ut stuevinduet hjemme i Newfoundland i Canada. Et enormt isfjell fløt forbi huset og Jason var rask med å plukke opp mobilen for å filme det majestetiske synet. Ikke lenge etter at han startet å filme, skjedde det noe spesielt. I en video, som nå går sin seiersgang på YouTube, kan man høre et enormt smell fra isfjellet før det raser sammen. – Kom dere bort fra stranden, kan man høre Jason skrike til sin kone som oppholdt seg på en strand like ved der hun luftet deres to hunder. Ingen personer ble skadet i hendelsen som fant sted tirsdag i forrige uke.
+```
+Det var litt av et syn som møtte Jason Griffiths da han tittet ut stuevinduet hjemme i Newfoundland i Canada. Et 
+enormt isfjell fløt forbi huset og Jason var rask med å plukke opp mobilen for å filme det majestetiske synet. Ikke
+lenge etter at han startet å filme, skjedde det noe spesielt. I en video, som nå går sin seiersgang på YouTube, kan   man høre et enormt smell fra isfjellet før det raser sammen. – Kom dere bort fra stranden, kan man høre Jason 
+skrike til sin kone som oppholdt seg på en strand like ved der hun luftet deres to hunder. Ingen personer ble 
+skadet i hendelsen som fant sted tirsdag i forrige uke.
+```
