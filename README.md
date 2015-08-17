@@ -34,7 +34,7 @@ Example:
 const options = {
     selector: '.article-body',
     badNodes: ['h1', 'h2', 'figure', '.share-buttons', '#byline'],
-    badWords: ['les også:']
+    badWords: ['read more:']
 }
 ```
     
@@ -63,7 +63,7 @@ const badNodes = [
 ];
 
 const badWords = [
-    'les også:', 'les mer:', 'foto:', 'se også:', 'levert av:'
+    'les også:', 'les mer:', 'foto:', 'se også:', 'levert av'
 ];
     
 const options = {
