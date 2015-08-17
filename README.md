@@ -12,7 +12,6 @@ Fetches clean full text articles.
 ## Install
 
     npm install article-fetcher
-    npm build
 
 ## Usage
 ```js
