@@ -3,8 +3,9 @@ Fetches clean full text articles.
 
 ## Content
 * [Install](https://github.com/soldotno/article-fetcher#install)
-* [Usage](https://github.com/soldotno/article-fetcher#usage)
 * [Dependencies](https://github.com/soldotno/article-fetcher#dependencies)
+* [Usage](https://github.com/soldotno/article-fetcher#usage)
+* [API](https://github.com/soldotno/article-fetcher#api)
 * [Options](https://github.com/soldotno/article-fetcher#options)
 * [Bad nodes and words suggestions](https://github.com/soldotno/article-fetcher#bad-nodes-and-words-suggestions)
 * [Full example](https://github.com/soldotno/article-fetcher#full-example)
@@ -13,16 +14,31 @@ Fetches clean full text articles.
 
     npm install article-fetcher
 
-## Usage
-```js
-const af = require('article-fetcher');
-af.getArticle(url, options, callback);
-```
-
 ## Dependencies
 * [cheerio](https://github.com/cheeriojs/cheerio)
 * [string.js](https://github.com/jprichardson/string.js)
 * [superagent](https://github.com/visionmedia/superagent)
+
+## Usage
+```js
+const af = require('article-fetcher');
+```
+
+## API
+
+### getArticle(url, options, callback) 
+Fetches an article from an URL and then processes it. Available [options](https://github.com/soldotno/article-fetcher#options).
+
+```js
+af.getArticle(url, options, callback);
+```
+
+### process(url, options, callback)
+If you already have the HTML to process available, you can simply call this function to process the article. Available [options](https://github.com/soldotno/article-fetcher#options).
+
+```js
+af.process(content, options, callback);
+```
 
 ## Options
 * `selector` - Article selector. Default: 'body'
