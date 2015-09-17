@@ -5,8 +5,11 @@ module.exports = function(url, options, callback) {
         return callback('You must specify a URL.')
     }
 
+    const timeout = options.timeout ? options.timeout : 5000;
+
     request
         .get(url)
+        .timeout(timeout)
         .end((err, res) => {
             if (err) {
                 return callback(err);

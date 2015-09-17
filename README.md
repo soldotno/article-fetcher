@@ -44,6 +44,7 @@ af.process(content, options, callback);
 * `selector` - Article selector. Default: 'body'
 * `badNodes` - Nodes to exclude based on classes, ids or tags. Default: []
 * `badWords` - Nodes to exclude based on content. Default: []
+* `timeout` - Request timeout in ms. See [superagent documentation](http://visionmedia.github.io/superagent/#request-timeouts) for details. Default: 5000
 
 Example:
 ```js
@@ -85,7 +86,8 @@ const badWords = [
 const options = {
     selector: selector,
     badNodes: badNodes,
-    badWords: badWords
+    badWords: badWords,
+    timeout: 10000
 };
     
 af.getArticle(url, options, (err, res) => {
