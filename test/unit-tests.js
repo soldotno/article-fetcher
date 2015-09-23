@@ -1,6 +1,6 @@
 var should = require('chai').should();
 var fs = require('fs');
-var haf = require('../lib');
+var af = require('../dist');
 var path = require('path');
 
 describe('process()', function() {
@@ -31,7 +31,7 @@ describe('process()', function() {
     var dbSelector = '#editableBodyText';
 
     it('Article 1 should have the right length', function(done) {
-        haf.process(mockResponseDb, {
+        af.process(mockResponseDb, {
             selector: dbSelector,
             badNodes: badNodes,
             badWords: badWords
@@ -46,7 +46,7 @@ describe('process()', function() {
     });
 
     it('Article 2 should have the right length', function(done) {
-        haf.process(mockResponseNrk, {
+        af.process(mockResponseNrk, {
             selector: nrkSelector,
             badNodes: badNodes,
             badWords: badWords
@@ -61,7 +61,7 @@ describe('process()', function() {
     });
 
     it('Article 1 should contain expected text', function(done) {
-        haf.process(mockResponseDb, {
+        af.process(mockResponseDb, {
             selector: dbSelector,
             badNodes: badNodes,
             badWords: badWords
@@ -76,7 +76,7 @@ describe('process()', function() {
     });
 
     it('Article 2 should contain expected text', function(done) {
-        haf.process(mockResponseNrk, {
+        af.process(mockResponseNrk, {
             selector: nrkSelector,
             badNodes: badNodes,
             badWords: badWords
