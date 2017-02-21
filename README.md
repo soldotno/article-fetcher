@@ -1,4 +1,6 @@
 # article-fetcher
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/soldotno/article-fetcher.svg)](https://greenkeeper.io/)
 Fetches clean full text articles.
 
 ## Content
